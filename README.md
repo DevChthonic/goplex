@@ -1,7 +1,9 @@
 # goplex
 
-A simple shell script to quickly tunnel Plex through your Raspberry Pi for local browser access.  
+A simple shell script to quickly tunnel Plex through your Raspberry Pi for local browser access.
+
 For use when your Plex Media Server is running on a headless Pi and needs temporary local forwarding.
+
 This issue popped up when I installed plexmediaserver to my Raspberry Pi 5 in a headless manner and then could not access the usual `https://localhost:32400/web` page. A local port forward resolved this and now I simply run `goplex` in my terminal whenever I would like to watch something on my plex server.
 
 ---
@@ -39,8 +41,11 @@ in your browser to use the Plex UI.
 ## 🛠 Script Setup
 
 You must change the address to your pi. `username@pihostname.local`
+
 You may change `8888` to any free port you wish if there are conflicting ports. (e.g., 2727, 3636, 4242)
+
 The script is setup with a `6 second sleep delay` for you to enter your ssh password. You can increase this delay if it takes you longer than 6 seconds to complete the password entry. (e.g., `sleep 12`, `sleep 18`, `sleep 24`)
+
 The script also automatically opens Google Chrome. You can delete the `open -a "Google Chrome" http://localhost:8888` line (or comment it out) if you would prefer to navigate to your new port forward manually.
 
 ---
@@ -48,6 +53,7 @@ The script also automatically opens Google Chrome. You can delete the `open -a "
 ## ✅ Bonus Tip
 
 If you use SSH keys for authentication, the script will connect instantly without requiring a password.
+
 You may make this script executable with `chmod +x goplex` and then add this script to your $PATH so that you may type `goplex` in any directory which will enable you to `goplex` from any place in your terminal.
 
 ## 📂 What This Script Does
