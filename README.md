@@ -13,6 +13,7 @@ This issue popped up when I installed plexmediaserver to my Raspberry Pi 5 in a 
 - Port forwards Plex (default port `32400`) from your Raspberry Pi to your local machine on port `8888`.
 - Quick access to Plex via `http://localhost:8888/web`.
 - Automatically uses SSH to tunnel the port.
+- Automatically opens Google Chrome.
 
 ---
 
