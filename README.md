@@ -1,3 +1,6 @@
+
+![GOPLEX-5-23-2025](https://github.com/user-attachments/assets/a47cfe47-40a2-49c2-ba1e-89f62b55f555)
+
 # goplex
 
 A simple shell script to quickly tunnel Plex through your Raspberry Pi for local browser access.
@@ -63,4 +66,4 @@ You may make this script executable with `chmod +x goplex` and then add this scr
 ssh -L 8888:localhost:32400 dev@raspberrypi.local
 ```
 
-
+GOPLEX README.md image created using textstudio.com.
