@@ -1,0 +1,4 @@
+#!/bin/bash
+ssh -L 8888:localhost:32400 dev@raspberrypi.local -N &
+sleep 6
+open -a "Google Chrome" http://localhost:8888
